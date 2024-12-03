@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* DISEÑAMOS MOBILE FIRST, PRIMERO*/
+
+/* definimos los colores para que sea más fácil cambiarlos*/
+:root
+{
+    --background:#ff99c8;
+    --rojo:#FDAC9F;
+    --amarillo:#F0D19B;
+    --rosa:#F0C3BF;
+    --lila:#b77dbc;
+    --verde:rgb(0, 255, 119);
+    --rojo:#ed3d57;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    font-family:'Open Sans', sans-serif;   
+    text-align:center;
+}
+h1, #instrucciones, footer
+{
+    text-align:center;
+}
+
+main
+{
+    margin:30px 0 30px 0;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    gap:10px;
+}
+
+.fila
+{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+.casilla
+{
+    background-color: var(--lila);
+    width:50px;
+    height:50px;
+    border-radius:15px;
+    padding:10px;
+    text-align:center;
+    font-size:30px;
+
+    /*para que no se salga el texto*/
+    overflow:hidden;
+    /* para que no salga el contorno*/
+    outline:none;
+}
+
+
+#check
+{
+    background-color:var(--background);
+    width: 300px;
+    margin:0 auto;   
+    border:none;
+    padding:10px;
+    border-radius:8px;
+}
+
+#check:hover
+{
+    background-color:deeppink;
+}
+footer
+{
+    margin-top:30px;
+    font-size:smaller;
+}
